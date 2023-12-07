@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Assem1.URDF">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.19957 0.22972 0.40836"
+        rpy="0 0 0" />
+      <mass
+        value="4.5424" />
+      <inertia
+        ixx="0.035248"
+        ixy="-5.8363E-19"
+        ixz="-1.1063E-17"
+        iyy="0.12866"
+        iyz="1.5811E-19"
+        izz="0.094092" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1.URDF/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1.URDF/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="W1">
+    <inertial>
+      <origin
+        xyz="-2.7756E-17 0 0.015"
+        rpy="0 0 0" />
+      <mass
+        value="2.0994" />
+      <inertia
+        ixx="0.012084"
+        ixy="-1.8222E-38"
+        ixz="9.404E-36"
+        iyy="0.012084"
+        iyz="-9.3126E-36"
+        izz="0.023854" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1.URDF/meshes/W1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1.URDF/meshes/W1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="W1"
+    type="continuous">
+    <origin
+      xyz="0.19957 -0.55836 0.22972"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="W1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="W2">
+    <inertial>
+      <origin
+        xyz="-2.7756E-17 0 0.015"
+        rpy="0 0 0" />
+      <mass
+        value="2.0994" />
+      <inertia
+        ixx="0.012084"
+        ixy="-1.8222E-38"
+        ixz="9.404E-36"
+        iyy="0.012084"
+        iyz="-9.3126E-36"
+        izz="0.023854" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1.URDF/meshes/W2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1.URDF/meshes/W2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="W2"
+    type="continuous">
+    <origin
+      xyz="0.19957 -0.22836 0.22972"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="W2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
